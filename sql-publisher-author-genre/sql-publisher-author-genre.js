@@ -9,11 +9,14 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema = Schemas.OPTION_6; // TODO: Update this constant
+// As publisher has many authors and author has many publishers,
+// we need another table which explain their relationship
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherGenreSchema = Schemas.OPTION_4; // TODO: Update this constant
+// if publisher have only one genre, publisher should have id_genre. 
+// option 6 is still available, but it will spend more database
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlAuthorGenreSchema = Schemas.OPTION_6; // TODO: Update this constant
+// As Author has many genres and genre has many Authors,
+// we need another table which explain their relationship
